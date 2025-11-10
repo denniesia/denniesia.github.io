@@ -32,6 +32,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
+
+  --dark-pink-primary: #e71a7d; 
   --font-family-sans-serif: "Roboto", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -66,6 +68,10 @@ body {
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
+}
+
+.ds-logo {
+  width: 7em;
 }
 
 hr {
@@ -2592,7 +2598,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-light {
-  color: #212529;
+  color: var(--dark-pink-primary);
   background-color: #ffffff;
   border-color: #ffffff;
 }
@@ -2890,14 +2896,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-dark {
-  color: #343a40;
-  border-color: #343a40;
+  color: var(--dark-pink-primary);
+  border-color: var(--dark-pink-primary);
 }
 
 .btn-outline-dark:hover {
   color: #fff;
-  background-color: #343a40;
-  border-color: #343a40;
+  background-color: var(--dark-pink-primary);
+  border-color: var(--dark-pink-primary);
 }
 
 .btn-outline-dark:focus, .btn-outline-dark.focus {
@@ -9803,7 +9809,7 @@ h6,
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #0BCEAF;
+  color: var(--pink);
 }
 
 @media (max-width: 991.98px) {
