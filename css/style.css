@@ -2603,13 +2603,13 @@ fieldset:disabled a.btn {
 }
 
 .btn-light {
-  color: var(--dark-pink-primary);
+  color: var(--dark-pink-secondary);
   background-color: #ffffff;
   border-color: #ffffff;
 }
 
 .btn-light:hover {
-  color: var(--dark-pink-secondary);
+  color: #ffff;
   background-color: var(--light-pink-hover);
   border-color: #e6e6e6;
 }
