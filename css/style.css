@@ -9984,3 +9984,103 @@ h6,
 .row.align-items-center {
     animation: fadeInUp 1s ease forwards;
 }
+
+/* Certificate card styling */
+.certificate-card {
+  width: 20rem;           /* fixed card width */
+  height: 18rem;          
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;         /* centers in column */
+}
+
+.certificate-card img {
+  width: 100%;
+  height: 80%;
+  object-fit: contain;     
+  border-radius: 0.75rem;
+}
+
+.certificate-card h5 {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+.certificate-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 10px var(--pink);
+}
+
+.cert-cont{
+  cursor: pointer;
+}
+
+ /* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  max-width: 80%;
+  max-height: 80%;
+  margin: 0 auto;          /* center modal horizontally */
+  overflow-y: auto;
+  justify-items: center;   /* centers items horizontally in grid cells */
+  align-items: flex-start;     /* centers items vertically in grid cells */
+}
+
+.modal-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.modal-content img {
+  width: 100%;
+  max-width: 160px;         /* keeps images nicely sized */
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.modal-content img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+    .close-btn {
+      position: absolute;
+      top: 30%;
+      left: 200px;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+      
+    }
+
