@@ -45,7 +45,9 @@
                 <a href="#skill" class="nav-item nav-link">Skill</a>
                 <a href="#certificates" class="nav-item nav-link">Certificates</a>
                 <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                <!-- 
                 <a href="#contact" class="nav-item nav-link">Contact</a>
+                -->
             </div>
         </div>
     </nav>
@@ -239,7 +241,7 @@
                 <div class="col-lg-4 col-md-6 text-center mb-5 cert-cont" id="openGallery1" onclick="openGallery('openGallery1', 'galleryModal1', 'closeGallery1')">
                     <div class="certificate-card p-3 bg-white rounded-4">
                         <img src="img/python_basic.png" alt="IBM Certificate">
-                        <h5>Python Certificates</h5>
+                        <h5>SoftUni Certificates</h5>
                     </div>
                 </div>     
                 <div class="col-lg-4 col-md-6 text-center mb-5 cert-cont" id="openGallery2" onclick="openGallery('openGallery2', 'galleryModal2', 'closeGallery2')">
@@ -286,6 +288,7 @@
             </a>
         </div>
     </div>
+
      <div class="modal" id="galleryModal2">
         <span class="close-btn" id="closeGallery2">&times;</span>
         <div class="modal-content mt-5">
@@ -382,6 +385,7 @@
 
 
     <!-- Contact Start -->
+    <!--- 
     <div class="container-fluid py-5" id="contact">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
@@ -390,29 +394,30 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <form>
+                    <form method="post">
                         <div class="form-row">
                             <div class="control-group col-sm-6 mb-3">
-                                <input type="text" class="form-control p-4" placeholder="Your Name" />
+                                <input type="text" name="name" class="form-control p-4" placeholder="Your Name" />
                             </div>
                             <div class="control-group col-sm-6 mb-3">
-                                <input type="email" class="form-control p-4" placeholder="Your Email" />
+                                <input type="email" name="email" class="form-control p-4" placeholder="Your Email" />
                             </div>
                         </div>
                         <div class="control-group mb-3">
-                            <input type="text" class="form-control p-4" placeholder="Subject" />
+                            <input type="text" name="subject" class="form-control p-4" placeholder="Subject" />
                         </div>
                         <div class="control-group mb-3">
-                            <textarea class="form-control py-3 px-4" rows="5" placeholder="Message"></textarea>
+                            <textarea class="form-control py-3 px-4" rows="5" name="message" placeholder="Message"></textarea>
                         </div>
                         <div class="text-center">
-                            <button class="btn btn-outline-primary">Send Message</button>
+                            <button class="btn btn-outline-primary" type="submit">Send Message</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    -->
     <!-- Contact End -->
 
 
