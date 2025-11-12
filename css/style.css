@@ -9940,8 +9940,8 @@ h6,
 
 .portfolio-item:hover .portfolio-btn {
   opacity: 1;
-  width: calc(100% - 60px);
-  height: calc(100% - 60px);
+  width: 50%;
+  height: 50%;
   top: 30px;
   left: 30px;
 }
@@ -10084,3 +10084,114 @@ h6,
   
 }
 
+
+.project-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 2em;
+  border: 1px solid var(--primary);
+  border-radius: 2em;
+  padding: 2em 1em;
+
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 20px var(--light-pink);
+}
+
+.project-img-wrapper {
+  position: relative;
+  width: 30%;
+
+}
+
+.project-img-wrapper:hover {
+  box-shadow: 0 8px 20px var(--light-pink);
+}
+
+.project-img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+
+/* Hide play button initially */
+.project-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary);
+  border-radius: 50%;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+}
+
+/* Show when hovering over the image area */
+.project-img-wrapper:hover .project-play-button {
+  opacity: 2;
+}
+
+.project-card .project-play-button:hover {
+  display: block;
+}
+
+.project-content {
+  align-self: flex-start;
+}
+
+.project-content .links .link-item {
+  color: var(--primary);
+  font-size: 28px;
+  padding: .1em;
+  background-color: transparent;
+  border-radius: 50%;
+  border:1px solid var(--primary);
+}
+.project-content .links .link-item:hover {
+  color: white;
+
+  padding: .1em;
+  background-color: var(--primary);
+  border-radius: 50%;
+  border:1px solid transparent;
+}
+
+.project-content p {
+  max-width: 66ch;
+
+}
+
+.project-content .tools ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: .4em;
+  padding-left: 0;
+  width: 34em;
+}
+.project-content .tools ul .li-item{
+  list-style: none;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-wrap: nowrap;
+  border: 1px solid var(--primary);
+  border-radius: 1.2em;
+
+}
+
+
+.portfolio-item .project-card:nth-of-type(2) {
+  display: flex;            
+  flex-direction: row-reverse; 
+  align-items: center; 
+}
