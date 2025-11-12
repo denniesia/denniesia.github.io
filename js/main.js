@@ -101,21 +101,22 @@
     
 })(jQuery);
 
-
-const openGallery = document.getElementById('openGallery');
-    const galleryModal = document.getElementById('galleryModal');
-    const closeGallery = document.getElementById('closeGallery');
+function openGallery(galleryElStr, galleryModalStr, closGalleryElSt) {
+    const openGallery = document.getElementById(galleryElStr);
+    const galleryModal = document.getElementById(galleryModalStr);
+    const closeGallery = document.getElementById(closGalleryElSt);
 
     openGallery.addEventListener('click', () => {
-      galleryModal.style.display = 'flex';
+        galleryModal.style.display = 'flex';
     });
 
     closeGallery.addEventListener('click', () => {
-      galleryModal.style.display = 'none';
+        galleryModal.style.display = 'none';
     });
 
     window.addEventListener('click', (e) => {
-      if (e.target === galleryModal) {
+        if (e.target === galleryModal) {
         galleryModal.style.display = 'none';
-      }
+        }
     });
+}

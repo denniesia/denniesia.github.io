@@ -236,25 +236,26 @@
                 <h1 class="position-absolute text-uppercase text-primary">My Certificates</h1>
             </div>
             <div class="row pb-3">
-                <div class="col-lg-4 col-md-6 text-center mb-5 cert-cont">
-                    <div class="certificate-card p-3 bg-white rounded-4">
-                        <img src="img/certificate_ibm.png" alt="IBM Certificate">
-                        <h5>IMD Certificates</h5>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5 cert-cont" id="openGallery">
+                <div class="col-lg-4 col-md-6 text-center mb-5 cert-cont" id="openGallery1" onclick="openGallery('openGallery1', 'galleryModal1', 'closeGallery1')">
                     <div class="certificate-card p-3 bg-white rounded-4">
                         <img src="img/python_basic.png" alt="IBM Certificate">
                         <h5>Python Certificates</h5>
                     </div>
                 </div>     
+                <div class="col-lg-4 col-md-6 text-center mb-5 cert-cont" id="openGallery2" onclick="openGallery('openGallery2', 'galleryModal2', 'closeGallery2')">
+                    <div class="certificate-card p-3 bg-white rounded-4">
+                        <img src="img/certificate_ibm.png" alt="IBM Certificate">
+                        <h5>IMD Certificates</h5>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
     
-    <!-- Modal Gallery -->
-     <div class="modal" id="galleryModal">
-        <span class="close-btn" id="closeGallery">&times;</span>
+    <!-- Modal Galleries -->
+     <div class="modal" id="galleryModal1">
+        <span class="close-btn" id="closeGallery1">&times;</span>
         <div class="modal-content mt-5">
             <a href="assets/1.pythonBasics.pdf" target="_blank" >
                 <img src="img/1.pythonBasics.jpeg" target="_blank"></img>
@@ -282,6 +283,14 @@
             </a>
             <a href="assets/9.htmlCss.pdf" target="_blank">
                 <img src="img/9.htmlCss.jpeg"></img>
+            </a>
+        </div>
+    </div>
+     <div class="modal" id="galleryModal2">
+        <span class="close-btn" id="closeGallery2">&times;</span>
+        <div class="modal-content mt-5">
+            <a href="img/certificate_ibm.png" target="_blank" >
+                <img src="img/certificate_ibm.png" target="_blank"></img>
             </a>
         </div>
     </div>
