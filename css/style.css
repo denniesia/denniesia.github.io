@@ -10134,6 +10134,12 @@ h6,
   display: block;
   border-radius: 10px;
 }
+.project-img-mobile {
+  width: 100%;
+  border-radius: 10px;
+  height: 20em;
+  object-fit: contain;
+}
 
 /* Hide play button initially */
 .project-play-button {
